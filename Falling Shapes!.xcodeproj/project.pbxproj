@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3332AB71CE7C3F200F321BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3332AB61CE7C3F200F321BD /* AppDelegate.swift */; };
+		D3332AB91CE7C3F200F321BD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D3332AB81CE7C3F200F321BD /* GameScene.sks */; };
+		D3332ABB1CE7C3F200F321BD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3332ABA1CE7C3F200F321BD /* GameScene.swift */; };
+		D3332ABD1CE7C3F200F321BD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3332ABC1CE7C3F200F321BD /* GameViewController.swift */; };
+		D3332AC01CE7C3F200F321BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3332ABE1CE7C3F200F321BD /* Main.storyboard */; };
+		D3332AC21CE7C3F200F321BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3332AC11CE7C3F200F321BD /* Assets.xcassets */; };
+		D3332AC51CE7C3F200F321BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3332AC31CE7C3F200F321BD /* LaunchScreen.storyboard */; };
+		D3332AD01CE7C3F300F321BD /* Falling_Shapes_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3332ACF1CE7C3F300F321BD /* Falling_Shapes_Tests.swift */; };
+		D3332ADB1CE7C3F300F321BD /* Falling_Shapes_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3332ADA1CE7C3F300F321BD /* Falling_Shapes_UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3332ACC1CE7C3F300F321BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3332AAB1CE7C3F200F321BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3332AB21CE7C3F200F321BD;
+			remoteInfo = "Falling Shapes!";
+		};
+		D3332AD71CE7C3F300F321BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3332AAB1CE7C3F200F321BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3332AB21CE7C3F200F321BD;
+			remoteInfo = "Falling Shapes!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3332AB31CE7C3F200F321BD /* Falling Shapes!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Falling Shapes!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3332AB61CE7C3F200F321BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3332AB81CE7C3F200F321BD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D3332ABA1CE7C3F200F321BD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D3332ABC1CE7C3F200F321BD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D3332ABF1CE7C3F200F321BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3332AC11CE7C3F200F321BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3332AC41CE7C3F200F321BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3332AC61CE7C3F200F321BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3332ACB1CE7C3F300F321BD /* Falling Shapes!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Falling Shapes!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3332ACF1CE7C3F300F321BD /* Falling_Shapes_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falling_Shapes_Tests.swift; sourceTree = "<group>"; };
+		D3332AD11CE7C3F300F321BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3332AD61CE7C3F300F321BD /* Falling Shapes!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Falling Shapes!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3332ADA1CE7C3F300F321BD /* Falling_Shapes_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falling_Shapes_UITests.swift; sourceTree = "<group>"; };
+		D3332ADC1CE7C3F300F321BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3332AB01CE7C3F200F321BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3332AC81CE7C3F300F321BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3332AD31CE7C3F300F321BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3332AAA1CE7C3F200F321BD = {
+			isa = PBXGroup;
+			children = (
+				D3332AB51CE7C3F200F321BD /* Falling Shapes! */,
+				D3332ACE1CE7C3F300F321BD /* Falling Shapes!Tests */,
+				D3332AD91CE7C3F300F321BD /* Falling Shapes!UITests */,
+				D3332AB41CE7C3F200F321BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3332AB41CE7C3F200F321BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3332AB31CE7C3F200F321BD /* Falling Shapes!.app */,
+				D3332ACB1CE7C3F300F321BD /* Falling Shapes!Tests.xctest */,
+				D3332AD61CE7C3F300F321BD /* Falling Shapes!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3332AB51CE7C3F200F321BD /* Falling Shapes! */ = {
+			isa = PBXGroup;
+			children = (
+				D3332AB61CE7C3F200F321BD /* AppDelegate.swift */,
+				D3332AB81CE7C3F200F321BD /* GameScene.sks */,
+				D3332ABA1CE7C3F200F321BD /* GameScene.swift */,
+				D3332ABC1CE7C3F200F321BD /* GameViewController.swift */,
+				D3332ABE1CE7C3F200F321BD /* Main.storyboard */,
+				D3332AC11CE7C3F200F321BD /* Assets.xcassets */,
+				D3332AC31CE7C3F200F321BD /* LaunchScreen.storyboard */,
+				D3332AC61CE7C3F200F321BD /* Info.plist */,
+			);
+			path = "Falling Shapes!";
+			sourceTree = "<group>";
+		};
+		D3332ACE1CE7C3F300F321BD /* Falling Shapes!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D3332ACF1CE7C3F300F321BD /* Falling_Shapes_Tests.swift */,
+				D3332AD11CE7C3F300F321BD /* Info.plist */,
+			);
+			path = "Falling Shapes!Tests";
+			sourceTree = "<group>";
+		};
+		D3332AD91CE7C3F300F321BD /* Falling Shapes!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3332ADA1CE7C3F300F321BD /* Falling_Shapes_UITests.swift */,
+				D3332ADC1CE7C3F300F321BD /* Info.plist */,
+			);
+			path = "Falling Shapes!UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3332AB21CE7C3F200F321BD /* Falling Shapes! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3332ADF1CE7C3F300F321BD /* Build configuration list for PBXNativeTarget "Falling Shapes!" */;
+			buildPhases = (
+				D3332AAF1CE7C3F200F321BD /* Sources */,
+				D3332AB01CE7C3F200F321BD /* Frameworks */,
+				D3332AB11CE7C3F200F321BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Falling Shapes!";
+			productName = "Falling Shapes!";
+			productReference = D3332AB31CE7C3F200F321BD /* Falling Shapes!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3332ACA1CE7C3F300F321BD /* Falling Shapes!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3332AE21CE7C3F300F321BD /* Build configuration list for PBXNativeTarget "Falling Shapes!Tests" */;
+			buildPhases = (
+				D3332AC71CE7C3F300F321BD /* Sources */,
+				D3332AC81CE7C3F300F321BD /* Frameworks */,
+				D3332AC91CE7C3F300F321BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3332ACD1CE7C3F300F321BD /* PBXTargetDependency */,
+			);
+			name = "Falling Shapes!Tests";
+			productName = "Falling Shapes!Tests";
+			productReference = D3332ACB1CE7C3F300F321BD /* Falling Shapes!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3332AD51CE7C3F300F321BD /* Falling Shapes!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3332AE51CE7C3F300F321BD /* Build configuration list for PBXNativeTarget "Falling Shapes!UITests" */;
+			buildPhases = (
+				D3332AD21CE7C3F300F321BD /* Sources */,
+				D3332AD31CE7C3F300F321BD /* Frameworks */,
+				D3332AD41CE7C3F300F321BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3332AD81CE7C3F300F321BD /* PBXTargetDependency */,
+			);
+			name = "Falling Shapes!UITests";
+			productName = "Falling Shapes!UITests";
+			productReference = D3332AD61CE7C3F300F321BD /* Falling Shapes!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3332AAB1CE7C3F200F321BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = codebluapps;
+				TargetAttributes = {
+					D3332AB21CE7C3F200F321BD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D3332ACA1CE7C3F300F321BD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D3332AB21CE7C3F200F321BD;
+					};
+					D3332AD51CE7C3F300F321BD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D3332AB21CE7C3F200F321BD;
+					};
+				};
+			};
+			buildConfigurationList = D3332AAE1CE7C3F200F321BD /* Build configuration list for PBXProject "Falling Shapes!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3332AAA1CE7C3F200F321BD;
+			productRefGroup = D3332AB41CE7C3F200F321BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3332AB21CE7C3F200F321BD /* Falling Shapes! */,
+				D3332ACA1CE7C3F300F321BD /* Falling Shapes!Tests */,
+				D3332AD51CE7C3F300F321BD /* Falling Shapes!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3332AB11CE7C3F200F321BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3332AB91CE7C3F200F321BD /* GameScene.sks in Resources */,
+				D3332AC51CE7C3F200F321BD /* LaunchScreen.storyboard in Resources */,
+				D3332AC21CE7C3F200F321BD /* Assets.xcassets in Resources */,
+				D3332AC01CE7C3F200F321BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3332AC91CE7C3F300F321BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3332AD41CE7C3F300F321BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3332AAF1CE7C3F200F321BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3332ABB1CE7C3F200F321BD /* GameScene.swift in Sources */,
+				D3332ABD1CE7C3F200F321BD /* GameViewController.swift in Sources */,
+				D3332AB71CE7C3F200F321BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3332AC71CE7C3F300F321BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3332AD01CE7C3F300F321BD /* Falling_Shapes_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3332AD21CE7C3F300F321BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3332ADB1CE7C3F300F321BD /* Falling_Shapes_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3332ACD1CE7C3F300F321BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3332AB21CE7C3F200F321BD /* Falling Shapes! */;
+			targetProxy = D3332ACC1CE7C3F300F321BD /* PBXContainerItemProxy */;
+		};
+		D3332AD81CE7C3F300F321BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3332AB21CE7C3F200F321BD /* Falling Shapes! */;
+			targetProxy = D3332AD71CE7C3F300F321BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3332ABE1CE7C3F200F321BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3332ABF1CE7C3F200F321BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3332AC31CE7C3F200F321BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3332AC41CE7C3F200F321BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3332ADD1CE7C3F300F321BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3332ADE1CE7C3F300F321BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3332AE01CE7C3F300F321BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Falling Shapes!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.Falling-Shapes-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3332AE11CE7C3F300F321BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Falling Shapes!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.Falling-Shapes-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D3332AE31CE7C3F300F321BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Falling Shapes!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.Falling-Shapes-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Falling Shapes!.app/Falling Shapes!";
+			};
+			name = Debug;
+		};
+		D3332AE41CE7C3F300F321BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Falling Shapes!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.Falling-Shapes-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Falling Shapes!.app/Falling Shapes!";
+			};
+			name = Release;
+		};
+		D3332AE61CE7C3F300F321BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Falling Shapes!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.Falling-Shapes-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Falling Shapes!";
+			};
+			name = Debug;
+		};
+		D3332AE71CE7C3F300F321BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Falling Shapes!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.Falling-Shapes-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Falling Shapes!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3332AAE1CE7C3F200F321BD /* Build configuration list for PBXProject "Falling Shapes!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3332ADD1CE7C3F300F321BD /* Debug */,
+				D3332ADE1CE7C3F300F321BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3332ADF1CE7C3F300F321BD /* Build configuration list for PBXNativeTarget "Falling Shapes!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3332AE01CE7C3F300F321BD /* Debug */,
+				D3332AE11CE7C3F300F321BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3332AE21CE7C3F300F321BD /* Build configuration list for PBXNativeTarget "Falling Shapes!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3332AE31CE7C3F300F321BD /* Debug */,
+				D3332AE41CE7C3F300F321BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3332AE51CE7C3F300F321BD /* Build configuration list for PBXNativeTarget "Falling Shapes!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3332AE61CE7C3F300F321BD /* Debug */,
+				D3332AE71CE7C3F300F321BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3332AAB1CE7C3F200F321BD /* Project object */;
+}
