@@ -8,17 +8,29 @@
 
 import UIKit
 import SpriteKit
+import Foundation
+import GoogleMobileAds
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, GADInterstitialDelegate {
+    
+    var interstitial: GADInterstitial!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(GameViewController.checkAd), name: "showInterstitialKey", object: nil)
+        
+        self.interstitial = createAndLoadInterstitial()
+        
+        let request = GADRequest()
+        request.testDevices = ["kGADSimulatorID"]
+        self.interstitial.loadRequest(request)
 
-        if let scene = GameScene(fileNamed:"GameScene") {
+        if let scene = MainMenuScene(fileNamed:"MainMenuScene") {
             // Configure the view.
             let skView = self.view as! SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
+            skView.showsFPS = false
+            skView.showsNodeCount = false
             
             /* Sprite Kit applies additional optimizations to improve rendering performance */
             skView.ignoresSiblingOrder = true
@@ -28,6 +40,35 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+    }
+    
+    func checkAd() {
+        
+        if interstitial.isReady {
+            
+            if self.interstitial.isReady {
+                
+                if adShown % 4 == 0 {
+                    
+                    self.interstitial.presentFromRootViewController(self)
+                    
+                }
+            }
+        }
+    }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-6536902852765774/7870877446")
+        interstitial.delegate = self
+        interstitial.loadRequest(GADRequest())
+        return interstitial
+        
+    }
+    
+    func interstitialDidDismissScreen(ad: GADInterstitial!) {
+        
+        self.interstitial = createAndLoadInterstitial()
     }
 
     override func shouldAutorotate() -> Bool {
